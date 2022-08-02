@@ -1,0 +1,11 @@
+h2 {
+    background-color: hotpink;
+}
+p {
+    color: blue;
+}
+.artikel h1 {
+    color: red;
+    background-color: blue;
+    font-size: 20px;
+}

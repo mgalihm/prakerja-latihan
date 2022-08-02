@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Hitung Angka</title>
+</head>
+
+<body>
+    <h1>Hitung Mundur Maju</h1>
+    <div>
+        <button id="mundur">mundur</button>
+        <button id="maju">maju</button>
+    </div>
+
+    <h2 id="angka">0</h1>
+</body>
+<script>
+    let buttonMundur = document.getElementById("mundur");
+    let buttonMaju = document.getElementById("maju");
+    let angka = document.getElementById("angka");
+    let hitung = 0;
+
+    buttonMundur.addEventListener("click", () => {
+        hitung--;
+        // hitung = hitung -1;
+        angka.innerHTML = hitung;
+    });
+
+    buttonMaju.addEventListener("click", () => {
+        hitung++;
+        // hitung = hitung + 1;
+        angka.innerHTML = hitung;
+    });
+</script>
+
+</html>

@@ -1,0 +1,63 @@
+STORE "angka" with 1            (inisiasi, mulai dari angka berapa)
+
+WHILE "angka" <= 10             (kondisi, sampai angka berapa. kondisi akan berhenti jika false)
+    DISPLAY "angka"             (kegiatannya)
+    ADD "angka" with 1          (iterasi, penambahan agar angka sampai kondisi)
+
+==========================
+LOOPING wajib ada: inisiasi, kondisi, iterasi
+
+==========================
+STORE "full level" with 0
+
+WHILE "full level" < 5
+    ADD "full level" with 1
+
+DISPLAY "I am Happy"
+
+===========================
+
+1 ODD!
+2 EVEN!
+3 ODD!
+4 EVEN!
+....
+10 EVEN!
+
+
+==========================
+MODULO (%) = SISA PEMBAGIAN
+
+SETIAP ANGKA GENAP MODULO 2 = 0
+SETIAP ANGKA GANJIL MODULO 2 = 1
+
+5 % 3 = 2
+10 % 3 = 1
+5 % 2 = 1
+8 % 2 = 0
+
+======================
+STORE "angka" with 1            (inisiasi, mulai dari angka berapa)
+
+WHILE "angka" <= 10             (kondisi, sampai angka berapa. kondisi akan berhenti jika false)
+    DISPLAY "angka"             (kegiatannya)
+    COMPUTE "angka" mod 2
+    STORE "sisa" sebagai hasil kalkulasi
+    IF "sisa" EQUAL TO 0
+        DISPLAY "EVEN!"
+    ELSE
+        DISPLAY "ODD!"
+    ADD "angka" with 1          (iterasi, penambahan agar angka sampai kondisi)
+    STORE "angka"
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10

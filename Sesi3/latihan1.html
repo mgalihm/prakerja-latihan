@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Placement</title>
+    <!-- INTERNAL CSS  -->
+    <style>
+        h1 {
+            color: rgb(0, 255, 255);
+            background-color: silver;
+        }
+        .teks-hijau {
+            color: green;
+        }
+        .background-tan {
+            background-color: tan;
+        }
+        #judul {
+            color: purple;
+        }
+        p {
+            color:purple;
+        }
+    </style>
+    <!-- EXTERNAL CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- INLINE CSS -->
+    <p style="color: red; background-color: tan;">Teks berwarna merah</p>
+
+    <!-- INTERNAL CSS  -->
+    <h1>Teks H1 berwarna biru</h1>
+    <h1 class="teks-hijau background-tan">Teks H1 berwarna hijau</h1>
+    <h1 id="judul" class="background-tan">Teks H1 Judul berwarna ungu</h1>
+
+    <!-- EXTERNAL CSS  -->
+    <h2>Teks H2 background pink</h2>
+    <div class="artikel">
+        <h1>Ini h1 artikel</h1>
+    </div>
+</body>
+</html>

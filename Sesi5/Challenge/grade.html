@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="margin-bottom: 16px;">
+        <label>Nilai: </label>
+        <input type="number" id="nilai" value="0"/>
+    </div>
+    <div style="margin-bottom: 16px;">
+        <button onclick="cekGrade()">Cek Grade</button>
+    </div>
+    <label>Grade: </label>
+    <b id="grade">
+        -
+    </b>
+    <script>
+        function hitungGrade(nilai) {
+            let grade = "";
+            if (nilai >= 90) {
+                grade = "A";
+            } else if (nilai >= 80) {
+                grade = "B";
+            } else if (nilai >= 70) {
+                grade = "C";
+            } else if (nilai >= 60) {
+                grade = "D";
+            } else {
+                grade = "E";
+            }
+            return grade;
+        }
+        function cekGrade() {
+            var nilai_siswa = document.getElementById("nilai");
+            var grade = document.getElementById("grade");
+            grade.innerHTML = hitungGrade(nilai_siswa.value);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // READ and SAVE "nilai" and "nama"
+        // IF "nilai" >= 60
+        //     SAVE "keterangan" = lulus           (ini dilakukan jika if benar)
+        // ELSE
+        //     SAVE "keterangan" = tidak lulus     (ini dilakukan jika if salah)
+        // DISPLAY "keterangan"  
+        
+        const nilai = prompt("Input Nilai");
+        const nama = prompt("Input Nama");
+        let keterangan = ""
+        if(nilai>=60) {
+            keterangan = "LULUS"
+        }
+        else {
+            keterangan = "TIDAK LULUS"
+        }
+        document.write(keterangan)
+    </script>
+</body>
+</html>

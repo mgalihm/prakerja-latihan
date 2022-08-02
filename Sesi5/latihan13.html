@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="print1000x()">Print 1000x</button>
+    <ol id="text"></ol>
+
+    <script>
+        function print1000x() {
+            const dt = document.getElementById("text");
+            //inisiasi
+            // let hitung = 1;
+            // //kondisi
+            // while (hitung <= 1000) {
+            //     dt.innerHTML = dt.innerHTML + "<li>Saya tidak akan terlambat lagi</li>";
+            //     //iterasi
+            //     hitung++;
+            // }
+            for (let hitung = 1; hitung <= 1000; hitung++) {
+                dt.innerHTML = dt.innerHTML + "<li>Saya tidak akan terlambat lagi</li>";
+            }
+        }
+    </script>
+</body>
+
+</html>

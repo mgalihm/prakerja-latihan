@@ -1,0 +1,21 @@
+IF "hungry"
+    DO "eat"  (ini dilakukan jika if benar)
+
+DISPLAY "I am happy" (apapun hasil if, ini akan dilakukan)
+
+================================
+READ and SAVE "nilai" and "nama"
+IF "nilai" >= 60
+    SAVE "keterangan" = lulus           (ini dilakukan jika if benar)
+ELSE
+    SAVE "keterangan" = tidak lulus     (ini dilakukan jika if salah)
+DISPLAY "keterangan"                    (apapun hasil if, ini akan dilakukan)
+
+================================
+
+STORE "score" to any number
+IF "score" < 70
+    DO "learn more"             (ini dilakukan jika if benar)
+ELSE 
+    DO "reward myself"          (ini dilakukan jika if salah)
+DO "continue with life"         (apapun hasil if, ini akan dilakukan)

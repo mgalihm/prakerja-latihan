@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="nama"></h1>
+    <h1 id="lokasi"></h1>
+
+    <script>
+        // Membuat variable
+        const nama = "Hacktiv8";
+        let lokasi = "Jakarta";
+
+        // Mengganti isi variable
+        lokasi = "Bogor";
+
+        // Menampilkan isi variable di console
+        console.log(nama);
+        console.log(lokasi);
+
+        // Menampilkan isi variable di document h1 nama dan lokasi
+        document.getElementById("nama").innerHTML = nama;
+        document.getElementById("lokasi").innerHTML = lokasi;
+    </script>
+</body>
+</html>

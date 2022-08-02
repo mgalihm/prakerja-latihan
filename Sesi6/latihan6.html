@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="password" />
+    <button onclick="cekPassword()">Cek Password</button>
+    <h1 id="hasil"></h1>
+    <script>
+        function cekPassword() {
+            // const pola = /Javascript/;
+            const pola = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            const hasil = document.getElementById("hasil");
+            const inputPassword = document.getElementById("password");
+
+            if (pola.test(inputPassword.value)) {
+                hasil.innerHTML = "Password Match Pola"
+            } else {
+                hasil.innerHTML = "Password Doesn't Match Pola"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

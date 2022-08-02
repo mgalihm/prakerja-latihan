@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="print()">Print Makanan Kesukaan</button>
+    <ul id="list"></ul>
+
+    <script>
+        function print() {
+            const dt = document.getElementById("list");
+            // Array
+            const list_makanan = ["nasi goreng", "mie goreng", "ayam goreng", "sate ayam"];
+            // list_makanan.length = jumlah data di array (4)
+            for (let index = 0; index < list_makanan.length; index++) {
+                dt.innerHTML = dt.innerHTML + `<li>${list_makanan[index]}</li>`;
+            }
+        }
+    </script>
+</body>
+
+</html>

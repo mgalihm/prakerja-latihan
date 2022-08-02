@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar DOM</title>
+</head>
+<body>
+    <div id="header">
+        <h1 class="judul">Judul</h1>
+    </div>
+    <h1 class="judul">Judul</h1>
+
+    <button onclick="ganti_judul()">Ganti Judul</button>
+
+    <script>
+        function ganti_judul() {
+            document.querySelector("#header .judul").innerHTML = "Judul Baru"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Operator Aritmatika</title>
+</head>
+<body>
+    <div id="penjumlahan"></div>
+    <div id="pengurangan"></div>
+    <div id="pembagian"></div>
+    <div id="perkalian"></div>
+    <div id="modulus"></div>
+
+    <script>
+        const bilangan1 = 6;
+        const bilangan2 = 2;
+
+        const penjumlahan = bilangan1 + bilangan2; // 8
+        const pengurangan = bilangan1 - bilangan2; // 4
+        const perkalian = bilangan1 * bilangan2; // 12
+        const pembagian = bilangan1 / bilangan2; // 3
+        const modulus = bilangan1 % bilangan2; // 0
+
+        document.getElementById("penjumlahan").innerHTML = penjumlahan;
+        document.getElementById("pengurangan").innerHTML = pengurangan;
+        document.getElementById("perkalian").innerHTML = perkalian;
+        document.getElementById("pembagian").innerHTML = pembagian;
+        document.getElementById("modulus").innerHTML = modulus;
+    </script>
+</body>
+</html>
